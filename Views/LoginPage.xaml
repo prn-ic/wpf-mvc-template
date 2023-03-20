@@ -1,0 +1,27 @@
+﻿<Page x:Class="KeeperTest.Views.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KeeperTest.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LoginPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="25" Text="{Binding Name}"></TextBlock>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock FontSize="20">Вход</TextBlock>
+            <TextBlock FontSize="14">Код сотрудника: </TextBlock>
+            <TextBox></TextBox>
+            <TextBlock FontSize="14">Пароль:</TextBlock>
+            <TextBox></TextBox>
+            <Button Margin="5" Click="Login_Click">Войти</Button>
+        </StackPanel>
+    </Grid>
+</Page>
